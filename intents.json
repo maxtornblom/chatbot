@@ -1,0 +1,123 @@
+{"intents": [
+    {"tag": "chart_error",
+     "patterns": ["If I add a new chart signal I get the error `This content was not properly loaded`"],
+     "responses": ["If you are using your own theme this is caused by missing fields in your theme files. Read mor about this [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#adding-new-chart-signal-gives-this-content-was-not-properly-loaded)"],
+     "context_set": ""
+    },
+    {"tag": "broken_image",
+     "patterns": ["I'm getting broken image links in my views with the error `400 Bad Request`"],
+     "responses": ["This is an error in the IIS web server. Read more about it [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#broken-image-links)"],
+     "context_set": ""
+    },
+    {"tag": "scheduled_task",
+     "patterns": ["When I setup a scheduled task in windows, the task runs in the foreground"],
+     "responses": ["Read more about it [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#my-scheduled-task-runs-in-foreground-blue-box)"],
+     "context_set": ""
+    },
+    {"tag": "controller_error",
+     "patterns": ["Controller Web touch scroll does not work"],
+     "responses": ["Read more about it [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#controllers-web-swipe-does-not-work-on-panel-pc)"],
+     "context_set": ""
+    },
+    {"tag": "nodejs_application_management",
+     "patterns": ["If I have my own Node.JS application, can I piggy-back on Arrigo's services to manage startup and shutdown?"],
+     "responses": ["Yes! Read more about it [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#use-arrigos-process-management-for-my-own-services)"],
+     "context_set": ""
+    },
+    {"tag": "document_link_issue",
+     "patterns": ["Open document work with link icons, why doesn't it work in view buttons"],
+     "responses": ["Read more about that [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#arrigo-button-in-view-maneuver-open-document-does-not-work)"],
+     "context_set": ""
+    },
+    {"tag": "admin_panel_error",
+     "patterns": ["When I try open the User Administration panel I get an error. Why?"],
+     "responses": ["Try restarting the browser. Read more about it [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#user-admin-window-only-shows-an-error)"],
+     "context_set": ""
+    },
+    {"tag": "arrigo_services_reboot_issue",
+     "patterns": ["Arrigo Services are not starting up after reboot"],
+     "responses": ["Read more about it [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#arrigo-services-are-not-starting-up-after-reboot)"],
+     "context_set": ""
+    },
+    {"tag": "reboot_server_displaying_issue",
+     "patterns": ["After a reboot of the server views with code and reports are not displaying correctly"],
+     "responses": ["Read more about it [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#arrigo-services-are-not-starting-up-after-reboot)"],
+     "context_set": ""
+    },
+    {"tag": "change_bound_port",
+     "patterns": ["How do I change the bound port in IIS and will Arrigo Local function correctly?"],
+     "responses": ["Yes, ***Arrigo Local*** will work just fine with any port you throw at it. Read more about it [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#change-listeningbound-port-for-iis)"],
+     "context_set": ""
+    },
+    {"tag": "login_page_dosent_load_all files",
+     "patterns": ["The login page looks strange and the browser doesn't seem to load all files"],
+     "responses": ["This could happen if some MIME types are not configured/set in the IIS. Read more about it [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#certain-file-types-cannot-be-loaded)"],
+     "context_set": ""
+    },
+    {"tag": "HTTP_error_500.37",
+     "patterns": ["When I open Arrigo Local and/or check the status I get HTTP error '500.37 - ANCM Failed to Start Within Startup Time Limit'."],
+     "responses": ["The `500.37` error can occur when a large number of apps are configured to start automatically after a restart. Read more about it [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#http-error-50037)"],
+     "context_set": ""
+    },
+    {"tag": "HTTP_error_500.31",
+     "patterns": ["When I open Arrigo Local and/or check the status I get HTTP error '500.31 - ANCM Failed to Find Native Dependencies'."],
+     "responses": ["The `500.31` error can occur if something went wrong during the Dotnet Hosting Bundle installation, and the installer wasn't able to detect it. Uninstall the current bundle (*Microsoft .NET Core 3.1.XX - Windows Server Hosting*) and run the Arrigo Local Installer again."],
+     "context_set": ""
+    },
+    {"tag": "HTTP_error_500.30",
+     "patterns": ["When I open Arrigo Local and/or check the status I get HTTP error '500.30 - ANCM In-Process Start Failure'."],
+     "responses": ["The `500.30` error could occur if the *ArrigoAppPool* lacks **MODIFY** permissions for the folder `Proj:\\Arrigo`. Read more about it [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#http-error-50030)"],
+     "context_set": ""
+    },
+    {"tag": "HTTP_error_500.19",
+     "patterns": ["When I open Arrigo Local and/or check the status I get HTTP error '500.19 - Internal Server Error'."],
+     "responses": ["The `500.19` error can occur if something went wrong during the Dotnet Hosting Bundle installation, and the installer wasn't able to detect it. Uninstall the current bundle (*Microsoft .NET Core 3.1.XX - Windows Server Hosting*) and run the Arrigo Local Installer again."],
+     "context_set": ""
+    },
+    {"tag": "ssl_tls_certificate",
+     "patterns": ["SSL TLS certificate"],
+     "responses": ["Don't use self-signed certificates. Buy a valid certificate from a trusted certificate authority. Read more about this [here](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Knowledgebase/00_QnA/#https-and-ssl-certificates)"],
+     "context_set": ""
+    },
+    {"tag": "no_value_views",
+     "patterns": ["I dont see any values in my views"],
+     "responses": ["This could be related to WebSockets. Read [this page](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/WebSockets/00_Troubleshooting/) and see if it helps"],
+     "context_set": ""
+    },
+    {"tag": "webosckets",
+     "patterns": ["What are WebSockets"],
+     "responses": ["WebSockets is a technology for bi-directional communication. Read [this page](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/WebSockets/00_Troubleshooting/) for more info"],
+     "context_set": ""
+    },
+    {"tag": "open_devtool",
+     "patterns": ["Open DevTools"],
+     "responses": ["Chrome: press F12. Microsoft Edge: press Ctrl+Shift+I"],
+     "context_set": ""
+    },
+    {"tag": "app_pool",
+     "patterns": ["App Pool"],
+     "responses": ["The Arrigo AppPool makes sure that the Arrigo Local API is always up and running"],
+     "context_set": ""
+    },
+    {"tag": "restart_app_pool",
+     "patterns": ["Restart App Pool"],
+     "responses": ["Read [this page](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/00_Restarting%20the%20AppPool/) for more info"],
+     "context_set": ""
+    },
+    {"tag": "log_files",
+     "patterns": ["Log files"],
+     "responses": ["For Arrigo Local, the logs are stored in `%ProgramFiles/Arrigo/Arrigo Local/InstallLogs` and `%ProgramData%/Arrigo/Arrigo Local/Logs`. Read [this page](https://docs.arrigo.se/Troubleshooting/Arrigo%20Local/Logging/00_Server%20logs/) for more info"],
+     "context_set": ""
+    },
+    {"tag": "calculated_meter_not_working",
+     "patterns": ["Calculated meter not working"],
+     "responses": [" Read [this page](https://docs.arrigo.se/Troubleshooting/Arrigo.se/Calculated%20Meters/Troubleshooting/) for more info"],
+     "context_set": ""
+    },
+    {"tag": "ssf",
+     "patterns": ["What is SSF"],
+     "responses": ["Server Side Functions are used to run server-side code in Arrigo Local. Read [this tutorial](https://docs.arrigo.se/Tutorials%20and%20Snippets/ServerSideFunctions/01_Introduction/) for more info"],
+     "context_set": ""
+    }
+]
+}
