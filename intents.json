@@ -1,5 +1,5 @@
 {"intents": [
-    {"tag": "chart_error",
+    {"tag": "",
      "patterns": [""],
      "responses": [""],
      "context_set": ""
